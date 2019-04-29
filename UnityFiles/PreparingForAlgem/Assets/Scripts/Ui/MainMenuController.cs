@@ -19,4 +19,9 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
