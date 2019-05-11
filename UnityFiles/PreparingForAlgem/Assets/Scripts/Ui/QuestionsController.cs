@@ -14,6 +14,7 @@ public class QuestionsController : MonoBehaviour
     public Text Btn3Text;
     public Text Btn4Text;
     public GameObject GameLogicUI;
+    public AudioSource clip;
     public GameObject PathBack;
     [SerializeField]
     List<string> questions = new List<string>();
@@ -47,21 +48,25 @@ public class QuestionsController : MonoBehaviour
 
     public void Btn1Pushed()
     {
+        clip.Play();
         GetAnswer(1);
     }
 
     public void Btn2Pushed()
     {
+        clip.Play();
         GetAnswer(2);
     }
 
     public void Btn3Pushed()
     {
+        clip.Play();
         GetAnswer(3);
     }
 
     public void Btn4Pushed()
     {
+        clip.Play();
         GetAnswer(4);
     }
     /// <summary>
